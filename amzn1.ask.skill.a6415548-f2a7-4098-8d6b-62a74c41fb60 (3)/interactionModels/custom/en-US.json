@@ -1,0 +1,126 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "rocket elevators",
+      "intents": [
+        {
+          "name": "GetLaunchIntent",
+          "slots": [],
+          "samples": [
+            "hi",
+            "hello"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetStatusIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "what is the status of elevator {id}",
+            "Can you tell me the status of elevator {id}"
+          ]
+        },
+        {
+          "name": "ChangeStatusIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "status",
+              "type": "AMAZON.CreativeWorkType"
+            }
+          ],
+          "samples": [
+            "change elevator {id} status to {status}",
+            "change status to {status} for elevator {id}"
+          ]
+        },
+        {
+          "name": "GetBatteryIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "what is the status of battery {id}",
+            "Can you tell me the status of battery {id}"
+          ]
+        },
+        {
+          "name": "GetColumnIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "what is the status of column {id}",
+            "Can you tell me the status of column {id}"
+          ]
+        },
+        {
+          "name": "GetRemoteDataIntent",
+          "slots": [],
+          "samples": [
+            "how is rocket elevators going",
+            "what is happening at rocket elevators",
+            "what is going on"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Inactive",
+                "synonyms": [
+                  "inactive"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Active",
+                "synonyms": [
+                  "active"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Intervention",
+                "synonyms": [
+                  "intervention"
+                ]
+              }
+            }
+          ],
+          "name": "AMAZON.CreativeWorkType"
+        }
+      ]
+    }
+  },
+  "version": "32"
+}
