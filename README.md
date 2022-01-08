@@ -2,7 +2,7 @@
 #WEEK 13
 #Artificial inteligence for rocket elevators
 #
-#here is my video : 
+#here is my video : https://www.youtube.com/watch?v=yyqUvu1Hdmo
 
 #you can do the test here
 #
